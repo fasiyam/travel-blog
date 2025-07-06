@@ -1,79 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
-
 
 body {
-    background-image: url("../images/main-cover-image.jpg");
+    background-color: bisque;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/anthony-tran-YIkdjoAJcyI-unsplash.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 1vh;
+    background-size: cover;
+
+    padding-top: 16px;
+    margin-bottom: 16px;
 }
 
-/* Designing the logo */
-.logo {
-    font-size: 32px;
-    font-weight: 800;
-    margin-left: 8px;
+.hero {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-/* Creating the nav bar */
+.hero h1 {
+    font-family: Montserrat;
+    font-size: 64px;
+    color: whitesmoke;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
 
-.nav--links {
+.hero p {
     font-family: Nunito;
-    font-size: 20px;
+    color: white;
+    font-size: 24px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+/* Navigation bar */
+
+.items {
+    position: relative;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    padding: 0 16px 0 16px;
+    margin: 0 32px 0 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 16px 48px;
-    border: 2px solid white;
-    background-color: rgba(245, 245, 245, 0.741);
-    padding: 10px;
-    border-radius: 16px;
-}
-
-.item--links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
 }
 
 
-.items {
-    padding: 0 40px;
-}
-
-/* Removing default underline from anchor */
-
-.items a {
-    text-decoration: none;
-    color: black;
-}
-
-
-/* Designing button */
-
-#btn {
+span {
     font-family: Nunito;
-    font-size: 16px;
-    padding: 6px 16px;
-    border-radius: 8px;
-    background-color: black;
-    margin-right: 8px;
-}
-
-#btn a{
-    text-decoration: none;
-    color: #fff;
+    font-size: 20px;
     font-weight: 700;
 }
 
 
-/*  */
+.li-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 48px;
+}
+
+
+.li-items li {
+    list-style-type: none;
+}
+
+
+.li-items li a {
+    text-decoration: none;
+    font-family: Nunito;
+    font-size: 16px;
+    color: black;
+}
+
+
+.items button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+.items button {
+    padding: 8px 16px;
+    border: none;
+    background-color: black;
+    border-radius: 8px;
+    border: none;
+    margin: 6px;
+}
+
+
