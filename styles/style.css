@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url("../images/main-cover-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1vh;
+}
+
+/* Designing the logo */
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    margin-left: 8px;
+}
+
+/* Creating the nav bar */
+
+.nav--links {
+    font-family: Nunito;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 48px;
+    border: 2px solid white;
+    background-color: rgba(245, 245, 245, 0.741);
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.item--links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+.items {
+    padding: 0 40px;
+}
+
+/* Removing default underline from anchor */
+
+.items a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Designing button */
+
+#btn {
+    font-family: Nunito;
+    font-size: 16px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    background-color: black;
+    margin-right: 8px;
+}
+
+#btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/*  */
